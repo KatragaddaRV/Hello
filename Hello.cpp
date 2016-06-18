@@ -1,24 +1,25 @@
 // Hello.cpp : Defines the entry point for the console application.
 //
-
-#include "stdafx.h"
-#include <iostream>
 #include "Hello.h"
 
-using namespace std;
-
-
-int _tmain(int argc, _TCHAR* argv[])
+int main(int argc, char **argv)
 {
-	Hello message;
+    Hello message;
+    const char *myStrings[]= 
+    {    "Hello, world.",
+         "-- Testing Git Repo.",
+         "   -- Concludes Testing.",
+         "      -- Concludes Testing by Updating a file after initial commit."
+    };
 
-	message.add(string("Hello, world"));
-	message.add(string("-- Testing Git Repo"));
-	message.add(string("   -- Concludes Testing"));
-	message.add(string("      -- Concludes Testing by Updating a file after initial commit"));
+    vector <string>  tStringVector(myStrings, myStrings+4);
+    vector<string>::const_iterator it;
 
-	message.print();
+    for( it= tStringVector.begin(); it != tStringVector.end(); ++it)
+    {   message.add(*it);
+    }
 
-	return ( 1 );
+    message.print();
+
+    return ( 1 );
 }
-

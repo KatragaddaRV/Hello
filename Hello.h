@@ -1,5 +1,5 @@
-#include <string>
 #include <iostream>
+#include <string>
 #include <vector>
 
 using namespace std;
@@ -7,23 +7,22 @@ using namespace std;
 class Hello
 {
 public:
-	Hello(void)  {}
-	~Hello(void) {}
+    Hello(void)  {}
+    ~Hello(void) {}
 
-	void add(std::string& message)
-	{   _sMessageList.push_back(message);
-	}
-	void print(void)
-	{   std::vector<std::string>::const_iterator it;
-		for(it= _sMessageList.begin(); it != _sMessageList.end(); ++it)
-		{   std::cout << *it << std::endl;
-		}
-	}
+    void add(string message)
+    {   _sMessageList.push_back(message);
+    }
+    void print(void)
+    {   vector<string>::const_iterator it;
+        for(it= _sMessageList.begin(); it != _sMessageList.end(); ++it)
+        {   cout << *it << endl;
+        }
+    }
 
 private:
-	typedef std::vector<std::string> stringVector;
+    typedef vector<string> stringVector;
 
-	stringVector  _sMessageList;
+    stringVector  _sMessageList;
 };
-
 
