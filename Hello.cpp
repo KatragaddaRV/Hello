@@ -1,10 +1,18 @@
 // Hello.cpp : Defines the entry point for the console application.
 //
 #include "Hello.h"
+#include <ctime>
 
 int main(int argc, char **argv)
 {
     Hello message;
+
+    time_t _tm =time(NULL );
+
+    struct tm * curtime = localtime ( &_tm );
+    string currentTimeString(asctime(curtime));
+    
+
     const char *myStrings[]= 
     {    "Hello, world.",
          "-- Testing Git Repo.",
@@ -21,6 +29,7 @@ int main(int argc, char **argv)
     }
 
     message.print();
+    cout << "The current date/time is:" << currentTimeString << endl;
 
     return ( 1 );
 }
