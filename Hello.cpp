@@ -9,10 +9,11 @@ int main(int argc, char **argv)
     {    "Hello, world.",
          "-- Testing Git Repo.",
          "   -- Concludes Testing.",
-         "      -- Concludes Testing by Updating a file after initial commit."
+         "      -- Concludes Testing by Updating a file after initial commit.",
+         "         -- Added Support for SCONS."
     };
 
-    vector <string>  tStringVector(myStrings, myStrings+4);
+    vector <string>  tStringVector(myStrings, myStrings+5);
     vector<string>::const_iterator it;
 
     for( it= tStringVector.begin(); it != tStringVector.end(); ++it)

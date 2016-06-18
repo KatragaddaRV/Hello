@@ -1,0 +1,1 @@
+Program('Hello.cpp', CPPPATH='.')

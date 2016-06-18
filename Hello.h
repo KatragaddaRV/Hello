@@ -1,3 +1,8 @@
+#ifndef __HELLOH__
+#define __HELLOH__
+/*---------------------------------------------------------*/
+/* File: Hello.h -- Ramana Katragadda                      */
+/*---------------------------------------------------------*/
 #include <iostream>
 #include <string>
 #include <vector>
@@ -25,4 +30,4 @@ private:
 
     stringVector  _sMessageList;
 };
-
+#endif
