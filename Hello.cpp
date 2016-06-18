@@ -17,7 +17,6 @@ int main(int argc, char **argv)
     {    "Hello, world.",
          "-- Testing Git Repo.",
          "   -- Concludes Testing.",
-         "      -- Concludes Testing by Updating a file after initial commit.",
          "         -- Added Support for SCONS."
     };
 
