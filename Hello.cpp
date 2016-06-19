@@ -13,7 +13,7 @@ int main(int argc, char **argv)
                {    "Hello, world.",
                     "-- Testing Git Repo.",
                     "   -- Concludes Testing.",
-                    "         -- Repo can now be built with scons"
+                    "      -- Repo can now be built with scons"
                };
 
     vector <string>  tStringVector(myStrings, myStrings+(sizeof(myStrings)/sizeof(char *)));
