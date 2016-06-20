@@ -27,5 +27,5 @@ int main(int argc, char **argv)
 
     cout << "The current date/time is: " << currentTimeString << endl;
 
-    return ( 1 );
+    return ( 0 );
 }
